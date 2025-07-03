@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Units Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <header class="bg-light border-bottom py-3 px-4 w-100">
+        <!-- Top Header -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h6 class="fw-bold m-0">Units</h6>
+            <!-- Right Side Icons -->
+            <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-bell text-secondary fs-5" style="cursor: pointer;"></i>
+
+                <!-- Language -->
+                <div class="dropdown">
+                    <button class="btn p-0 border-0 bg-transparent" data-bs-toggle="dropdown" title="Language">
+                        <i class="bi bi-globe text-secondary fs-5"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow-sm">
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Arabic</a></li>
+                    </ul>
+                </div>
+
+                <!-- Profile -->
+                <div class="dropdown">
+                    <button class="btn d-flex align-items-center bg-transparent border-0 p-0 dropdown-toggle"
+                        data-bs-toggle="dropdown">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center fw-bold me-2"
+                            style="width:32px; height:32px; background-color:#6c757d; color:white;">
+                            AL
+                        </div>
+                        <span class="text-dark">Asmaa</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end p-3 shadow" style="width: 220px; border-radius: 12px;">
+                        <div class="text-center mb-3">
+                            <div class="rounded-circle mx-auto d-flex align-items-center justify-content-center fw-bold"
+                                style="width:50px; height:50px; background-color:#6c757d; color:white; font-size: 20px;">
+                                AL
+                            </div>
+                            <div class="fw-bold mt-2">Asmaa</div>
+                            <div class="text-muted small">PITS</div>
+                        </div>
+                        <button class="btn btn-outline-secondary btn-sm w-100 mb-2">Edit Profile</button>
+                        <a href="#" class="dropdown-item text-center small text-muted py-1 border-top">Switch
+                            accounts</a>
+                        <a href="#" class="dropdown-item text-center fw-semibold py-2 border-top">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filters & Settings Row -->
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+            <!-- Filters -->
+            <div class="d-flex flex-wrap align-items-center gap-2">
+                <!-- Search -->
+                <div class="input-group input-group-sm" style="width: 200px;">
+                    <span class="input-group-text bg-white"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control" placeholder="Search" />
+                </div>
+
+                <!-- Filter -->
+                <select class="form-select custom-select-style" style="width: 200px;">
+                    <option selected>All</option>
+                    <option>license expired</option>
+                    <option>license not expired</option>
+                    <option>With Tracking</option>
+                </select>
+
+                <!-- Tags -->
+                <select class="form-select form-select-sm text-secondary" style="width: 200px;">
+                    <option selected disabled hidden>Tags</option>
+                    <option>Test 1</option>
+                    <option>Test 2</option>
+                    <option>Test 3</option>
+                    <option>Test 4</option>
+                </select>
+
+                <!-- Export -->
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary" type="button" data-bs-toggle="dropdown">
+                        Export
+                    </button>
+                    <ul class="dropdown-menu shadow">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                <i class="bi bi-file-earmark-pdf-fill text-danger"></i>
+                                Export as PDF
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center gap-2" href="#">
+                                <i class="bi bi-file-earmark-excel-fill text-success"></i>
+                                Export as Excel
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Refresh -->
+                <button class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-arrow-repeat"></i>
+                </button>
+            </div>
+
+            <!-- Settings Icon -->
+            <div class="dropdown">
+                <button class="btn btn-outline-secondary p-2" type="button" data-bs-toggle="dropdown">
+                    <i class="bi bi-gear"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end p-3 shadow"
+                    style="min-width: 220px; max-height: 300px; overflow-y: auto; border-radius: 12px;">
+                    <h6 class="dropdown-header fw-semibold border-bottom pb-2">Choose Columns</h6>
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" id="col1" checked>
+                        <label class="form-check-label fw-semibold" for="col1">Name</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="col2" checked>
+                        <label class="form-check-label fw-semibold" for="col2">Last Update</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="col3" checked>
+                        <label class="form-check-label fw-semibold" for="col3">status</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="col4" checked>
+                        <label class="form-check-label fw-semibold" for="col4">Odometer</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="col5" checked>
+                        <label class="form-check-label fw-semibold" for="col5">License Exp</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

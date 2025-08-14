@@ -4,7 +4,7 @@ import router from './router'
 import { createI18n } from 'vue-i18n'
 import en from './vue-localization/en.json'
 import ar from './vue-localization/ar.json'
-import { createPinia } from 'pinia' // ✅ إضافة Pinia
+import { createPinia } from 'pinia'
 
 // استيراد Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -15,7 +15,7 @@ import './style.css'
 // إعداد i18n
 const i18n = createI18n({
   legacy: false,
-  locale: 'en',
+  locale: 'en', // اللغة الافتراضية
   fallbackLocale: 'en',
   messages: { en, ar }
 })
@@ -24,7 +24,7 @@ const i18n = createI18n({
 const app = createApp(App)
 
 // استخدام Pinia + Router + i18n
-app.use(createPinia()) // ✅ تفعيل Pinia
+app.use(createPinia())
 app.use(router).use(i18n)
 
 // تغيير اتجاه الصفحة حسب اللغة

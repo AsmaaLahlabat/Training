@@ -35,5 +35,12 @@
   "status": "Status",
   "odometer": "Odometer",
   "licenseExp": "License Expiry",
-  "noData": "No data to display"
+  "noData": "No data to display",
+  "userTable": "userTable",
+  "ID": "ID",
+  "userName": "userName",
+  "email": "email",
+  "address": "address",
+  "phone": "phone",
+  "company": "company"
 }
